@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+### 变更（README 标配补全：中英双语拆分重构 + 版权署名段）
+
+- **为什么改**：commit skill 第 9 步标配检测（2026-10-03，工作目录卫生检查触发的 `/add` → `/commit` 流程）发现本仓 README 不符合「英文版 `README.md` + 中文版 `README_cn.md` 互链」标准：`README.md` 为中英对照混排、缺 `README_cn.md`、底部缺「版权与署名」段。
+- **改了什么**：① `README.md` 重构为英文版（原中英对照中的中文内容移入新建 `README_cn.md`），两版互链（`[简体中文](README_cn.md)` / `[English](README.md)`）；② 两版顶部 LOGO / 徽章块保持一致；③ 两版底部新增英文版 `## License & Attribution`、中文版 `## 版权与署名` 段（All Contributors 署名 + 许可证 + 项目地址引用）。
+
+### 变更（README 徽章组合合规：移除 Stars / Last Commit 动态徽章 + 补 Version 徽章）
+
+- **为什么改**：commit skill 第 9l 步检测（2026-10-03）发现两版 README 徽章行含 `Stars` / `Last Commit` 两枚 GitHub 动态徽章（规范禁用），且标准三枚（License / Version / Type）中缺 Version 徽章。
+- **改了什么**：README（EN/CN）徽章区删除 `Stars`、`Last Commit` 动态徽章行，新增 `Version-1.0.0` 静态徽章（版本号取自本次新建的 `VERSION`）；Visitors 访问量徽章（指向 xhqing traffic/badges/ 的 endpoint 形态）属团队允许例外，保留不动。
+
+### 新增（VERSION 1.0.0 与 .commit-cache.md：commit skill 第 9m 步标配补齐）
+
+- **为什么改**：本仓缺 `VERSION` 文件（commit skill 第 9m 步要求任何项目都必须有 `CHANGELOG.md` 与 `VERSION`）；`.commit-cache.md` 为 commit skill 标配检测缓存文件，首次运行标配检测后建立。
+- **改了什么**：① 新建 `VERSION`（1.0.0——取值顺序：无 `package.json` / 主 manifest，`CHANGELOG.md` 顶部无实际版本标题，取默认首版 1.0.0）；② 新建 `.commit-cache.md`，登记本次已完成的标准检测标记（readme-standard / license / github-about / agent-persona / attribution-name / readme-link-text / repo-sponsors / readme-badges / changelog-version）。
+
 ### 变更（CLAUDE.md 删去「由 Claude Code 自动加载」说明句）
 
 - **为什么改**：用户 2026-09-12 要求 CLAUDE.md 不再强调本文由 Claude Code 加载，团队全部项目的 CLAUDE.md 统一清理此类语句。
