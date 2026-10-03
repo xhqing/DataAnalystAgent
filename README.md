@@ -1,3 +1,15 @@
+<div align="center">
+
+<img src="assets/logo.svg" width="640" alt="Echo logo" />
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Stars](https://img.shields.io/github/stars/xhqing/DataAnalystAgent?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/xhqing/DataAnalystAgent)
+![AI Agent](https://img.shields.io/badge/Type-AI%20Agent-FF1493)
+<img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/xhqing/xhqing/main/traffic/badges/DataAnalystAgent.json" alt="Visits/day (14d)" />
+
+</div>
+
 # DataAnalystAgent · Echo
 
 > **数据分析师** — 流水线的反馈回路与学习引擎，做归因、分发建议、沉淀打法库。
