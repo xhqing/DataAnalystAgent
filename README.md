@@ -36,7 +36,7 @@ Attribution depends on the traceable labels in each stage's artifact contract (`
 
 ## License & Attribution
 
-Copyright (c) 2026 xhqing <https://github.com/xhqing> · Released under the [MIT License](LICENSE.md).
+Copyright (c) 2026 xhqing and contributors · Released under the [MIT License](LICENSE.md).
 
 **Attribution**: If you use or reference this project, please credit **xhqing**, keep the copyright notice, and cite the source (this repository).
 
